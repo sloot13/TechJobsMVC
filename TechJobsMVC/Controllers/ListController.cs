@@ -44,6 +44,7 @@ namespace TechJobsMVC.Controllers
         public IActionResult Jobs(string column, string value)
         {
             List<Job> jobs;
+            
             if (column.ToLower().Equals("all"))
             {
                 jobs = JobData.FindAll();
